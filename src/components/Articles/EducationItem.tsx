@@ -1,10 +1,10 @@
-import { Achievement } from '@content';
+import { Education } from '@content';
 import { AcademicCapIcon } from '@heroicons/react/24/solid';
 import React from 'react';
 import { Heading } from '../Heading/Heading';
 import Prose from '../Prose/Prose';
 
-const AchievementItem: React.FC<Achievement> = ({
+const EducationItem: React.FC<Education> = ({
   achievement,
   body,
   organization,
@@ -25,4 +25,4 @@ const AchievementItem: React.FC<Achievement> = ({
   );
 };
 
-export default AchievementItem;
+export default EducationItem;

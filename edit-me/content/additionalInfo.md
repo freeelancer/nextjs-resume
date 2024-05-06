@@ -2,6 +2,4 @@
 title: Hobbies & Interests
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Neque viverra justo nec ultrices. Urna nunc id cursus metus aliquam eleifend mi in nulla. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra.
-
-All Markdown files will be rendered as rich text, so you can include features such as [links](#).
+A competitive Magic, the Gathering player, I enjoy the strategic depth and ever-evolving world of the game. Participating in tournaments keeps my skills sharp and fosters critical thinking and problem-solving under pressure. These skills translate well to the rigorous nature of software development. I thrive in the ever-changing meta, where strategy constantly evolves with new card releases and shifting player preferences. This experience mirrors the fast-paced world of software development, where keeping up with the latest technologies and adapting to evolving project requirements is crucial.

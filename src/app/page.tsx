@@ -1,7 +1,7 @@
 import AboutMe from 'src/components/Articles/AboutMe';
-import Achievements from 'src/components/Articles/Achievements';
 import { AdditionalInfo } from 'src/components/Articles/AdditionalInfo';
 import { ContactInformation } from 'src/components/Articles/ContactInformation';
+import Education from 'src/components/Articles/Education';
 import Professional from 'src/components/Articles/Professional';
 import Skills from 'src/components/Articles/Skills';
 import { Footer } from 'src/components/Footer/Footer';
@@ -27,7 +27,7 @@ const Page: React.FC<PageProps> = () => {
         </div>
 
         <div className="mt-12">
-          <Achievements />
+          <Education />
         </div>
 
         <div className="mt-12">

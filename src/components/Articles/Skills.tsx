@@ -4,7 +4,7 @@ import React from 'react';
 import { Heading } from '../Heading/Heading';
 import Prose from '../Prose/Prose';
 import { SectionHeading } from '../SectionHeading/SectionHeading';
-import { StarRating } from '../StarRating/StarRating';
+import { Icon } from '../Icon/Icon';
 
 const Skills: React.FC = () => {
   return (
@@ -16,13 +16,11 @@ const Skills: React.FC = () => {
       />
 
       <div className="mt-2 grid grid-flow-row gap-6 lg:grid-flow-col">
-        {allSkills.map((skill, skillIndex) => (
+        {allSkills.map((skill) => (
           <div key={skill._id}>
             <Heading level={4}>
               <div className="flex items-center gap-2">
-                <StarRating
-                  stars={(allSkills.length - skillIndex) as 1 | 2 | 3}
-                />
+                <Icon icon={skill.title as string} />
                 {skill.title}
               </div>
             </Heading>

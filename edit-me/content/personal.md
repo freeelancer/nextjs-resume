@@ -1,9 +1,8 @@
 ---
-givenName: Stacy
-familyName: Fakename
-title: Official Job Title
-location: Austin, TX
-twitterUsername: stacy_fakename
+givenName: Lance
+familyName: Lan
+title: Blockchain/Backend Engineer
+location: Singapore
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Neque viverra [justo nec ultrices](#). Urna nunc id cursus metus aliquam eleifend mi in nulla. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra.
+I am a passionate blockchain/backend developer specializing in building secure and scalable core as well as DeFi protocols. I am fascinated by the potential of DeFi to unlock new financial frontiers and bring about a new financial revolution. My expertise lies in smart contract development (Solidity, Move, CosmWasm), cross-chain interoperability and Cosmos-sdk blockchains.

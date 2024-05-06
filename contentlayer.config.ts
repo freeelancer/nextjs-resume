@@ -74,9 +74,9 @@ export const ProfessionalExperience = defineDocumentType(() => ({
   },
 }));
 
-export const Achievement = defineDocumentType(() => ({
-  name: 'Achievement',
-  filePathPattern: 'achievements/*.md',
+export const Education = defineDocumentType(() => ({
+  name: 'Education',
+  filePathPattern: 'education/*.md',
   fields: {
     achievement: {
       type: 'string',
@@ -123,13 +123,37 @@ export const PrivateField = defineDocumentType(() => ({
   },
 }));
 
+export const ContactDetails = defineDocumentType(() => ({
+  name: 'ContactDetails',
+  filePathPattern: 'contactDetails.md',
+  isSingleton: true,
+  fields: {
+    email: {
+      type: 'string',
+      description: 'Your email address',
+      required: true,
+    },
+    telegram: {
+      type: 'string',
+      description: 'Your telegram handle',
+      required: true,
+    },
+    linkedin: {
+      type: 'string',
+      description: 'Your LinkedIn profile URL',
+      required: true,
+    },
+  },
+}));
+
 export default makeSource({
   contentDirPath: 'edit-me/content',
   documentTypes: [
     Personal,
+    ContactDetails,
     Skill,
     ProfessionalExperience,
-    Achievement,
+    Education,
     AdditionalInfo,
     PrivateField,
   ],

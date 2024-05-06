@@ -1,5 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { PrivateField, additionalInfo, allSkills, personal } from '@content';
+import {
+  PrivateField,
+  additionalInfo,
+  allSkills,
+  contactDetail,
+  personal,
+} from '@content';
 import {
   Document,
   Font,
@@ -18,7 +24,7 @@ import { contrastColor } from '../../helpers/colorContrast';
 import { getAccentColor, getNeutralColor } from '../../helpers/colors';
 import {
   fullName,
-  sortedAchievements,
+  sortedEducation,
   sortedProfessionalExperiences,
 } from '../../helpers/utils';
 import { BuildingColumns } from './Icons/BuildingColumns';
@@ -276,12 +282,18 @@ const PDF: React.FC<PDFProps> = ({ privateInformation }) => {
                 <Text style={styles.bold}>Location:</Text>
                 <Text>&nbsp;{personal.location}</Text>
               </View>
-              {privateInformation?.map((privateField) => (
-                <View key={privateField._id}>
-                  <Text style={styles.bold}>{privateField.label}:&nbsp;</Text>
-                  <Html {...htmlProps}>{privateField.body.html}</Html>
-                </View>
-              ))}
+              <View style={styles.flexRow}>
+                <Text style={styles.bold}>Email:</Text>
+                <Text>&nbsp;{contactDetail.email}</Text>
+              </View>
+              <View style={styles.flexRow}>
+                <Text style={styles.bold}>Telegram:</Text>
+                <Text>&nbsp;{contactDetail.telegram}</Text>
+              </View>
+              <View style={styles.flexRow}>
+                <Text style={styles.bold}>Linkedin:</Text>
+                <Text>&nbsp;{contactDetail.linkedin}</Text>
+              </View>
             </View>
             <View style={styles.section}>
               <View style={styles.sectionHeading}>
@@ -336,20 +348,20 @@ const PDF: React.FC<PDFProps> = ({ privateInformation }) => {
           <View style={styles.section}>
             <View style={styles.sectionHeading}>
               <CircleGraduationCap size={fontSizes.m} />
-              <Text>Achievements</Text>
+              <Text>Education</Text>
             </View>
-            {sortedAchievements.map((achievement) => (
-              <View key={achievement._id}>
+            {sortedEducation.map((education) => (
+              <View key={education._id}>
                 <View style={styles.itemHeading}>
-                  <Text style={styles.bold}>{achievement.achievement}</Text>
+                  <Text style={styles.bold}>{education.achievement}</Text>
                 </View>
                 <View style={styles.itemSubheadingRow}>
                   <BuildingColumns size={fontSizes.xxs} />
                   <Text style={styles.itemSubheading}>
-                    {achievement.organization}
+                    {education.organization}
                   </Text>
                 </View>
-                <Html {...htmlProps}>{achievement.body.html}</Html>
+                <Html {...htmlProps}>{education.body.html}</Html>
               </View>
             ))}
           </View>

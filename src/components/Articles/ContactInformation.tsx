@@ -1,4 +1,4 @@
-import { PrivateField, personal } from '@content';
+import { PrivateField, contactDetail, personal } from '@content';
 import { IdentificationIcon } from '@heroicons/react/24/solid';
 import React from 'react';
 import { SectionHeading } from '../SectionHeading/SectionHeading';
@@ -7,9 +7,7 @@ interface ContactInformationProps {
   privateInformation?: PrivateField[];
 }
 
-export const ContactInformation: React.FC<ContactInformationProps> = ({
-  privateInformation,
-}) => {
+export const ContactInformation: React.FC<ContactInformationProps> = () => {
   return (
     <article>
       <SectionHeading
@@ -22,14 +20,22 @@ export const ContactInformation: React.FC<ContactInformationProps> = ({
         <li>
           <strong>Location:</strong> {personal.location}
         </li>
-
-        {/* private access required */}
-        {privateInformation?.map((privateField) => (
-          <li className="mt-3" key={privateField.label}>
-            <strong>{privateField.label}</strong>{' '}
-            <div dangerouslySetInnerHTML={{ __html: privateField.body.html }} />
-          </li>
-        ))}
+        <li className="mt-2">
+          <strong>Email:</strong>{' '}
+          <a href={`mailto:${contactDetail.email}`}>{contactDetail.email}</a>
+        </li>
+        <li className="mt-2">
+          <strong>Telegram:</strong>{' '}
+          <a href={`https://t.me/${contactDetail.telegram}`}>
+            {contactDetail.telegram}
+          </a>
+        </li>
+        <li className="mt-2">
+          <strong>Linkedin:</strong>{' '}
+          <a href={`https://linkedin.com/in/${contactDetail.linkedin}`}>
+            {contactDetail.linkedin}
+          </a>
+        </li>
       </ul>
     </article>
   );

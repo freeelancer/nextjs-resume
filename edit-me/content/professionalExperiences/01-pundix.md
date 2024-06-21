@@ -5,5 +5,5 @@ startDate: August 2023
 endDate: November 2023
 ---
 
-- Strategize and support the development of new DeFi applications on FunctionX chain as well as the MarginX trading platform.
-- Spearheaded the addition of liquidity pools for FX tokens onto Osmosis through [github PRs](https://github.com/osmosis-labs/assetlists/pull/667) as well as direct communication with the Osmosis team.
+- Facilitated the integration of FX tokens onto Osmosis, the leading DEX in the Cosmos ecosystem. Collaborated with the Osmosis team via pull requests to their github repository and direct communication to ensure successful deployment.
+- Supported the investigation and strategic planning for migrating the FX chain to a ZK-rollup on Ethereum. Conducted research on ZK-rollup technology and its suitability for the FX chain's needs. ([github PRs](https://github.com/osmosis-labs/assetlists/pull/667))

@@ -8,8 +8,11 @@ interface PDFDownloadButtonProps {
 
 const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({ secret }) => {
   return (
+    // download pdf
     <ButtonLink
-      href={secret ? `/api/pdf?secret=${secret}` : '/api/pdf'}
+      href={
+        'https://drive.google.com/file/d/1VnQBG5waCJt01cu-TtDmq5xml6inYFnA/view?usp=drive_link'
+      }
       size="lg"
     >
       <DocumentIcon className="h-6" />
